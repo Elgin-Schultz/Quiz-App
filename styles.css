@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  border: 1px black solid;
+  margin: 0;
+  font-family: american typewriter;
+  @font-face {
+    font-family: american typewriter;
+    src: url(./fonts);
+  }
+}
+
+section {
+  margin: 20px;
+  background-image: url(./images/Old-Indexcard.jpg);
+  position: relative;
+}
+
+h1,
+h2,
+p {
+  font-family: american typewriter;
+  text-align: center;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.bookmark {
+  width: 5em;
+  position: absolute;
+  top: -18px;
+  right: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  color: deeppink;
+  font-size: 1.1rem;
+  text-align: right;
+  background-color: transparent;
+  width: 100%;
+  padding: 0 50px;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  bottom: 1em;
+}
+ul.categories {
+  font-size: 0.8rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+
+li {
+  width: 50px;
+}
