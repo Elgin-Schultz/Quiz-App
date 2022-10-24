@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  border: 1px black solid;
   margin: 0;
   font-family: american typewriter;
   @font-face {
@@ -13,6 +12,10 @@ section {
   margin: 20px;
   background-image: url(./images/Old-Indexcard.jpg);
   position: relative;
+}
+
+.index-card-answer {
+  color: deeppink;
 }
 
 h1,
@@ -37,14 +40,15 @@ a {
 }
 
 button {
-  color: deeppink;
   font-size: 1.1rem;
   text-align: right;
   background-color: transparent;
   width: 100%;
   padding: 0 50px;
 }
-
+button.answer {
+  color: deeppink;
+}
 nav {
   width: 100%;
   position: fixed;
