@@ -43,8 +43,9 @@ button {
   font-size: 1.1rem;
   text-align: right;
   background-color: transparent;
-  width: 100%;
-  padding: 0 50px;
+
+  padding: 10 50px;
+  border: none;
 }
 button.answer {
   color: deeppink;
