@@ -1,12 +1,14 @@
-@font-face {
-  font-family: american typewriter;
-  src: url(./fonts);
-}
 
 * {
   box-sizing: border-box;
   margin: 0;
   font-family: american typewriter;
+
+  @font-face {
+    font-family: american typewriter;
+    src: url(./fonts);
+  }
+
 }
 
 section {
@@ -15,7 +17,12 @@ section {
   position: relative;
 }
 
-.index-card-answer {
+.hidden {
+  display: none;
+}
+
+.index-card__answer {
+
   color: deeppink;
 }
 
@@ -29,12 +36,25 @@ p {
   justify-content: center;
 }
 
-.bookmark {
+
+.index-card--container-icon__bookmark,
+.index-card--container-icon__bookmark-set {
+
   width: 5em;
   position: absolute;
   top: -18px;
   right: 0px;
 }
+
+.index-card--container-icon__bookmark {
+  z-index: 1;
+}
+
+.index-card--icon__bookmark:hover,
+.index-card--icon__bookmark-set:hover {
+  cursor: pointer;
+}
+
 
 a {
   text-decoration: none;
@@ -48,9 +68,18 @@ button {
   padding: 10 50px;
   border: none;
 }
-button.answer {
+
+.button__answer {
   color: deeppink;
 }
+.button__answer:hover {
+  cursor: pointer;
+}
+
+.button__question:hover {
+  cursor: pointer;
+}
+
 nav {
   width: 100%;
   position: fixed;
@@ -67,9 +96,26 @@ ul.nav {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  padding: 1.5em;
+
+  padding: 1.5rem;
+
 }
 
 li {
   width: 50px;
 }
+.form {
+  text-align: center;
+  display: block;
+}
+label {
+  display: block;
+}
+
+.button__send {
+  text-align: center;
+}
+.button__send:hover {
+  cursor: pointer;
+}
+
