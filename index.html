@@ -5,15 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="./index.js" defer></script>
     <title>Quiz</title>
   </head>
+
   <body>
     <h1>Quiz App</h1>
     <main>
       <section class="index-card">
         <h2>Question</h2>
-        <p class="bookmark">
-          <img src="./images/Icon-Bookmark.svg" alt="Icon: Bookmark" />
+        <p class="index-card--container-icon__bookmark" data-js="bookmark">
+          <img
+            src="./images/icon-bookmark.svg"
+            alt="Icon Bookmark"
+            class="index-card--icon__bookmark"
+          />
+        </p>
+        <p
+          class="index-card--container-icon__bookmark-set hidden"
+          data-js="bookmark__set"
+        >
+          <img
+            src="./images/icon-bookmark-black.svg"
+            alt="Icon Set Bookmark"
+            class="index-card--icon__bookmark-set"
+          />
         </p>
         <p>
           Tootsie roll pie topping powder sugar plum souffl&eacute;. Gingerbread
@@ -29,13 +45,73 @@
           <li>#categorie</li>
           <li>#categorie</li>
         </ul>
-        <button class="answer">Antwort --></button>
+        <button class="button__answer" data-js="button__answer">
+          Answer -->
+        </button>
       </section>
+
+      <section class="index-card__answer" data-js="index-card__answer">
+        <h2>Answer</h2>
+        <p
+          class="index-card--container-icon__bookmark-set hidden"
+          data-js="bookmark__set"
+        >
+          <img
+            src="./images/icon-bookmark-black.svg"
+            alt="Icon Set Bookmark"
+            class="index-card--icon__bookmark-set"
+          />
+        </p>
+
+        <p class="index-card--container-icon__bookmark" data-js="bookmark">
+          <img
+            src="./images/icon-bookmark.svg"
+            alt="Icon Bookmark"
+            class="index-card--icon__bookmark"
+          />
+        </p>
+
+        <p>
+          Cupcake ipsum dolor sit amet cake croissant fruitcake muffin. Sweet
+          bonbon candy powder cheesecake muffin sesame snaps jujubes. Muffin
+          macaroon cheesecake cookie souffl&eacute; cookie cheesecake lollipop
+          candy canes. Halvah cotton candy sesame snaps chocolate bar. Sugar
+          plum dessert drag&eacute;e macaroon chupa chups. Cake cheesecake wafer
+          cotton candy. Danish jelly halvah jelly beans tootsie roll donut.
+          Halvah cheesecake halvah jujubes sweet roll biscuit croissant wafer.
+          Cake halvah chocolate bar sugar plum apple pie.
+        </p>
+        <ul class="categories">
+          <li>#categorie</li>
+          <li>#categorie</li>
+          <li>#categorie</li>
+        </ul>
+
+        <button class="button__question" data-js="button__question">
+          Question -->
+        </button>
+      </section>
+
       <section class="index-card">
         <h2>Question</h2>
-        <p class="bookmark">
-          <img src="./images/Icon-Bookmark-Set.svg" alt="Icon:Set Bookmark" />
+        <p
+          class="index-card--container-icon__bookmark-set hidden"
+          data-js="bookmark__set"
+        >
+          <img
+            src="./images/icon-bookmark-black.svg"
+            alt="Icon Set Bookmark"
+            class="index-card--icon__bookmark-set"
+          />
         </p>
+        <p class="index-card--container-icon__bookmark" data-js="bookmark">
+          <img
+            src="./images/icon-bookmark.svg"
+            alt="Icon Bookmark"
+            class="index-card--icon__bookmark"
+          />
+        </p>
+
         <p>
           Cupcake ipsum dolor sit amet cake croissant fruitcake muffin. Sweet
           bonbon candy powder cheesecake muffin sesame snaps jujubes. Muffin
@@ -52,31 +128,7 @@
           <li>#categorie</li>
         </ul>
 
-        <button class="answer">Antwort --></button>
-      </section>
-
-      <section class="index-card-answer">
-        <h2>Answer</h2>
-        <p class="bookmark">
-          <img src="./images/Icon-Bookmark-Set.svg" alt="Icon:Set Bookmark" />
-        </p>
-        <p>
-          Cupcake ipsum dolor sit amet cake croissant fruitcake muffin. Sweet
-          bonbon candy powder cheesecake muffin sesame snaps jujubes. Muffin
-          macaroon cheesecake cookie souffl&eacute; cookie cheesecake lollipop
-          candy canes. Halvah cotton candy sesame snaps chocolate bar. Sugar
-          plum dessert drag&eacute;e macaroon chupa chups. Cake cheesecake wafer
-          cotton candy. Danish jelly halvah jelly beans tootsie roll donut.
-          Halvah cheesecake halvah jujubes sweet roll biscuit croissant wafer.
-          Cake halvah chocolate bar sugar plum apple pie.
-        </p>
-        <ul class="categories">
-          <li>#categorie</li>
-          <li>#categorie</li>
-          <li>#categorie</li>
-        </ul>
-
-        <button class="Question">Frage --></button>
+        <button class="button__answer">Answer --></button>
       </section>
     </main>
   </body>
@@ -84,16 +136,21 @@
     <nav>
       <ul class="nav">
         <li>
-          <img src="./images/Icon-On-Home.svg" alt="Icon: Home" />
+          <img src="./images/icon-home-black.svg" alt="Icon Set Home" />
         </li>
         <li>
           <a href="/bookmarks.html"
-            ><img src="./images/Icon-Bookmark.svg" alt="Icon: Bookmark"
+            ><img src="./images/icon-bookmark.svg" alt="Icon Bookmark"
           /></a>
         </li>
         <li>
-          <a href="/"
-            ><img src="./images/Icon-Profile.svg" alt="Icon: Profile"
+          <a href="/newcard.html"
+            ><img src="./images/icon-file-plus.svg" alt="Icon New Card"
+          /></a>
+        </li>
+        <li>
+          <a href="/userprofile.html"
+            ><img src="./images/icon-user.svg" alt="Icon Profile"
           /></a>
         </li>
       </ul>
